@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -28,49 +29,22 @@
 
 </nav>
 
-<section class="hero" style="
-height:90vh;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-background-image:url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd');
-background-size:cover;
-background-position:center;
-background-repeat:no-repeat;
-position:relative;
-">
 
-<div style="
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.6);
-"></div>
+<!-- HERO -->
 
-<div class="hero-content" style="
-position:relative;
-z-index:2;
-color:white;
-max-width:600px;
-">
+<section class="hero">
 
-<h1 style="font-size:60px;margin-bottom:20px;">Next Level Fast Food</h1>
+<div class="hero-overlay"></div>
 
-<p style="margin-bottom:25px;font-size:18px;">
+<div class="hero-content">
+
+<h1>Next Level Fast Food</h1>
+
+<p>
 Fresh burgers, crispy fries and handcrafted meals made for modern food lovers.
 </p>
 
-<button class="cta" style="
-padding:12px 28px;
-background:#ff2fd1;
-border:none;
-color:white;
-cursor:pointer;
-font-size:16px;
-">
+<button class="cta">
 View Menu
 </button>
 
@@ -79,6 +53,8 @@ View Menu
 </section>
 
 
+<!-- MENU -->
+
 <section id="menu" class="menu">
 
 <h2>Popular Items</h2>
@@ -86,25 +62,25 @@ View Menu
 <div class="menu-grid">
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd">
+<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80">
 <h3>Classic Burger</h3>
 <p>$9</p>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+<img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=800&q=80">
 <h3>Double Burger</h3>
 <p>$12</p>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086">
+<img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=800&q=80">
 <h3>Cheese Pizza</h3>
 <p>$14</p>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1585238342024-78d387f4a707">
+<img src="https://images.unsplash.com/photo-1585238342024-78d387f4a707?auto=format&fit=crop&w=800&q=80">
 <h3>Crispy Fries</h3>
 <p>$6</p>
 </div>
@@ -113,6 +89,8 @@ View Menu
 
 </section>
 
+
+<!-- ABOUT -->
 
 <section id="about" class="about">
 
@@ -140,6 +118,8 @@ Our chefs prepare meals with bold flavors and unforgettable taste.
 </section>
 
 
+<!-- CONTACT -->
+
 <section id="contact" class="contact">
 
 <h2>Contact Us</h2>
@@ -152,7 +132,9 @@ Our chefs prepare meals with bold flavors and unforgettable taste.
 
 <textarea placeholder="Message"></textarea>
 
-<button type="submit" class="contact-btn">Send Message</button>
+<button type="submit" class="contact-btn">
+Send Message
+</button>
 
 </form>
 
@@ -165,7 +147,9 @@ Our chefs prepare meals with bold flavors and unforgettable taste.
 
 </footer>
 
+
 <script>
+
 const button = document.querySelector(".cta");
 
 button.addEventListener("click", () => {
@@ -175,8 +159,8 @@ behavior: "smooth"
 });
 
 });
+
 </script>
 
 </body>
-
 </html>
