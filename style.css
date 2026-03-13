@@ -19,6 +19,7 @@ align-items:center;
 padding:20px 8%;
 background:#0b0b0f;
 border-bottom:1px solid #222;
+flex-wrap:wrap;
 }
 
 .logo{
@@ -49,12 +50,13 @@ text-shadow:0 0 8px #00f7ff;
 /* HERO */
 
 .hero{
-height:90vh;
+min-height:90vh;
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
 background:linear-gradient(180deg,#0b0b0f,#050507);
+padding:40px 20px;
 }
 
 .hero-content h1{
@@ -162,10 +164,13 @@ font-family:'Orbitron',sans-serif;
 
 .about-image img{
 width:420px;
+max-width:100%;
 border-radius:10px;
 }
 
+
 /* CONTACT SECTION */
+
 .contact{
 padding:100px 8%;
 text-align:center;
@@ -181,7 +186,6 @@ color:#ff2fd1;
 text-shadow:0 0 10px #ff2fd1;
 }
 
-/* Form Styling */
 .contact form{
 max-width:500px;
 margin:auto;
@@ -214,7 +218,6 @@ resize:none;
 min-height:120px;
 }
 
-/* Button Styling */
 .contact-btn{
 padding:15px;
 border:none;
@@ -245,12 +248,99 @@ border-top:1px solid #222;
 color:#888;
 }
 
-@media screen and (max-width: 500px) {
-.navbar {
-    flex-direction: column; 
 
-  }
-.navbar ul{
-margin-top:2vh;
+
+/* ========================= */
+/* RESPONSIVE DESIGN */
+/* ========================= */
+
+
+/* TABLET */
+
+@media (max-width: 900px){
+
+.hero-content h1{
+font-size:45px;
 }
+
+.menu h2{
+font-size:34px;
+}
+
+.about-container{
+flex-direction:column;
+text-align:center;
+}
+
+.about-image img{
+width:100%;
+max-width:350px;
+}
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px){
+
+.navbar{
+flex-direction:column;
+gap:15px;
+}
+
+.nav-links{
+flex-direction:column;
+gap:15px;
+text-align:center;
+}
+
+.hero-content h1{
+font-size:32px;
+}
+
+.hero-content p{
+font-size:14px;
+}
+
+.cta{
+padding:10px 22px;
+}
+
+.menu{
+padding:60px 6%;
+}
+
+.menu-grid{
+grid-template-columns:1fr;
+}
+
+.contact{
+padding:70px 6%;
+}
+
+.contact h2{
+font-size:30px;
+}
+
+}
+
+
+/* EXTRA SMALL */
+
+@media (max-width: 400px){
+
+.hero-content h1{
+font-size:26px;
+}
+
+.logo{
+font-size:18px;
+}
+
+.contact input,
+.contact textarea{
+font-size:14px;
+}
+
 }
